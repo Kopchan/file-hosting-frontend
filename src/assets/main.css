@@ -1,0 +1,109 @@
+@import './base.css';
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.btnPrimary {
+  text-decoration: none;
+  border-radius: var(--border-radius-button);
+  border: none;
+  font-weight: 600;
+  color: #fff;
+  font-size: 15px;
+  padding: 0 20px;
+  height: 36px;
+  background: var(--accent);
+  transition: background 0.3s;
+}
+.btnPrimary:hover {
+  color: #fff;
+  background-color: var(--accent-dark-1);
+}
+.btnPrimary:active {
+  background-color: var(--accent-dark-2);
+}
+
+.link {
+  color: var(--accent);
+  font-weight: 600;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+.btnOutBg {
+  text-decoration: none;
+  border-radius: var(--border-radius-button);
+  display: flex;
+  align-items: center;
+  border: none;
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 15px;
+  padding: 0 10px;
+  height: 36px;
+  transition: background 0.3s;
+}
+.btnOutBg:hover {
+  color: var(--color-text);
+  background-color: var(--accent-transparent-3);
+}
+.btnOutBg:active {
+  background-color: var(--accent-transparent-2);
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+  border-radius: var(--border-radius-button);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-background-3);
+  color: var(--color-text);
+  font-size: 15px;
+  padding: 0 10px;
+  height: 36px;
+  transition: 0.2s;
+  border: 1px var(--color-border) solid;
+}
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=password]:hover {
+  background-color: var(--color-background-4);
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+  background-color: var(--color-background-4);
+  outline: 3px var(--accent-transparent-2) solid;
+  border: 1px var(--accent) solid;
+}
+
+.d-flex {display: flex}
+.d-grid {display: grid}
+
+.parent100 {width: 100%; height: 100%}
+
+.fd-c {flex-direction: column}
+
+.jc-sb {justify-content: space-between}
+.jc-c  {justify-content: center}
+.ai-c  {align-items:     center}
+
+.js-s {justify-self: start}
+.js-e {justify-self: flex-end}
+.as-e {  align-self: flex-end}
+
+.ta-c {text-align: center}
+
+.mt-a {margin-top:    auto}
+.mb-a {margin-bottom: auto}
