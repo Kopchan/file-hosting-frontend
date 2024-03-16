@@ -20,9 +20,9 @@ export const useAuthStore = defineStore('auth', () => {
   }
   async function logout() {
     await fetchWrapper.post('/logout')
-    token.value = null;
+    token.value = null
     localStorage.removeItem('token')
     router.push('/authorization')
   }
   return { token, registrate, login, logout }
-});
+})

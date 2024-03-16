@@ -1,16 +1,16 @@
 <script setup>
-import { ref } from 'vue';
-import AuthCard from '@/components/AuthCard.vue';
-import { useAuthStore } from '@/stores/auth';
-import router from '@/router';
+import { ref } from 'vue'
+import AuthCard from '@/components/AuthCard.vue'
+import { useAuthStore } from '@/stores/auth'
+import router from '@/router'
 
 const form = ref({
   email: '',
   password: '',
-});
+})
 
 const onSubmit = async () => {
-  const { login } = useAuthStore();
+  const { login } = useAuthStore()
   login(form.value).then(router.push('/'))
 }
 </script>

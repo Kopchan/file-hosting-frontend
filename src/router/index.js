@@ -30,8 +30,8 @@ router.beforeEach(async (to) => {
   const publicPages = [
     '/login',
     '/signup',
-  ];
-  const authRequired = !publicPages.includes(to.path);
+  ]
+  const authRequired = !publicPages.includes(to.path)
   const token = localStorage.getItem('token')
 
   if (authRequired && !token) {

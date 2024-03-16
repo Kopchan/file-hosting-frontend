@@ -9,6 +9,7 @@ module.exports = {
     ecmaVersion: 'latest'
   },
   rules: {
-    indent: ["error", 2]
+    indent: ["error", 2],
+    semi: ["error", "never"],
   },
 }
